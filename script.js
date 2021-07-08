@@ -11,7 +11,7 @@ $('document').ready(function()
 		alert("Ты прада хочешь его узнать?");
 		$.getJSON("https://api.ipify.org/?format=json", function(e) {
 			console.log(e.ip)
-			$("#GetIp").text("Ваш IP: "+e.ip)
+			$("#GetIp span").text("Ваш IP: "+e.ip)
 		});
 		console.log(ip)
 
