@@ -105,14 +105,17 @@ function Buy(itemCost,Cost, ProfitType,Profit){
 	}
 
 }
-
+$(".clickerBut").on("touchstart",function(){
+	$(".clickerBut").css("height", 230);
+    $(".clickerBut").css("width", 230);
+});
 $(".clickerBut").mousedown(function(){
 	$(".clickerBut").css("height", 230);
     $(".clickerBut").css("width", 230);
 });
 
 $(".clickerBut").on("click",function()
-{
+{	 
 	Cockies+=PerClick;
 	$(".balanceText").text(Cockies)
 	$(".clickerBut").css("height", 250);
