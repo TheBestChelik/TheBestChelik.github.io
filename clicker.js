@@ -2,7 +2,7 @@
 $('document').ready(function(){
 
 
-var Cockies = 100000000000;
+var Cockies = 0;
 
 var PerClick = 1;
 
