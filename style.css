@@ -1,0 +1,130 @@
+﻿*{
+	margin:0;
+	padding:0;
+}
+
+
+
+
+.main{
+	width: 100%;
+}
+
+.welcome{
+	position: relative;
+	text-align: center;
+	
+}
+.main p{
+	font-size: 2rem;
+
+}
+
+.history{
+	text-align: left;
+	width: 100%;
+	margin= 0;
+	padding = 0;
+	top = 0;
+	
+}
+
+.history p{
+	text-indent: 20px; /* Отступ первой строки в пикселах */
+	position: relative;
+	font-size: 1.5rem;
+	left: 1%;
+}
+
+.history h1{	
+	position: relative;
+	text-align: center;
+}
+
+
+.header{
+	text-align: center;
+	width: 100%;
+	color: white;
+	background: blue;
+}
+
+.header a{
+	color: white;
+}
+
+.cookies{
+	background: #F4A460;
+	height: 100vh;
+	text-align: center;
+}
+.cookies-head{
+
+	text-align: center;
+}
+
+
+.cookie-interface{
+	position: absolute;
+	width: 25%;
+	right: 3%;
+	text-align: center;
+}
+.balanceText, .PerClick, .PerSec, .Total{
+	font-size: 200%;
+}
+
+.shop{
+	position: relative;
+	text-align: right;
+	width: 100%;
+	/*background: #F4A460;*/
+}
+.About{
+	left:0;
+	width: 25%;
+	position: relative;
+	text-align: center;
+
+}
+.shop li{
+	 list-style-type: none
+}
+
+.shop button {
+	position: relative;
+	width: 100%;
+	font-size: 0.8rem;
+	
+	/*background: #F4A460;*/
+}
+.clickerBut{
+	height: 250px;
+	width: 250px;
+}
+
+.description{
+	vertical-align: text-bottom;
+	float: left;
+	width: 50%;
+	text-align:left;
+}
+.profit{
+	width: 30%;
+	text-align: left;
+	float:left;
+}
+.Price{
+	float: left;
+	text-align: right;
+}
+.ClickerButInterface{
+	position: absolute;
+	margin-top: 0px;
+	left: 40%;
+	float: center;
+}
+
+.Ava{
+	width:50%
+}
