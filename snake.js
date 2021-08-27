@@ -56,11 +56,13 @@ document.addEventListener('keydown', function(event) {
 });
 
 function handleStart(evt){
+    evt.preventDefault();
     xDown = evt.touches[0].clientX;
     yDown = evt.touches[0].clientY;
 }
 
 function handleMove(evt){
+    evt.preventDefault();
     if ( ! xDown || ! yDown ) {
         return;
     }
@@ -156,7 +158,7 @@ function EverySec(){
 
 
     drawField(Width,Height);
-	setTimeout(EverySec, 300);
+	setTimeout(EverySec, 100);
 }
 setTimeout(EverySec,300);
 
@@ -165,8 +167,8 @@ function windowSize(){
 
     WidthPx=    $(window).width();
     HeightPx =  $(window).height();
-    Width= Math.floor(WidthPx/40) -1;
-    Height =Math.floor(HeightPx/40) -1;
+    Width= Math.floor(WidthPx/20) -1;
+    Height =Math.floor(HeightPx/20) -1;
 }
 
 function drawField(w,h){
@@ -189,7 +191,7 @@ function drawField(w,h){
 
                 if(H==AppleY && W == AppleX){
                     ctx.fillStyle = "red";
-                    ctx.fillRect(W*40, H*40, 40, 40);
+                    ctx.fillRect(W*20, H*20, 20, 20);
                     ctx.fillStyle = "green";
                 }else{
                     var isSnake = false;
@@ -204,10 +206,10 @@ function drawField(w,h){
                         }
                     }
                     if(isSnake) {
-                        ctx.fillRect(W*40, H*40, 40, 40);
+                        ctx.fillRect(W*20, H*20, 20, 20);
                         ctx.fillStyle = "green";
                     }else{
-                        ctx.rect(W*40, H*40, 40, 40);
+                        //ctx.rect(W*20, H*20, 20, 20);
                     }
                 }
 
