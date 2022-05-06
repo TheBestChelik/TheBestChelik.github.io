@@ -165,27 +165,29 @@ setTimeout(EverySec,300);
 
 function windowSize(){
 
-    WidthPx=    $(window).width();
-    HeightPx =  $(window).height();
+    WidthPx = $(window).width();
+    HeightPx = $(window).height();
     Width= Math.floor(WidthPx/20) -1;
-    Height =Math.floor(HeightPx/20) -1;
+    Height =Math.floor(HeightPx/20) -4;
 }
 
 function drawField(w,h){
-
+	
 
 
     drawingCanvas.width = window.innerWidth;
     drawingCanvas.height = window.innerHeight;
 
     if(drawingCanvas.getContext){
-        if(AppleX == -7){
+		if(AppleX == -7){
             AppleX = Math.floor(Math.random() * w);
             AppleY = Math.floor(Math.random() * h);
         }
         var ctx = drawingCanvas.getContext('2d');
         ctx.beginPath();
         ctx.fillStyle = "green";
+		ctx.strokeRect(0, 0, (w+1)*20, (h+1)*20);
+        
         for(var H =0;H<=h;H++){
             for(var W=0;W<=w;W++){
 
