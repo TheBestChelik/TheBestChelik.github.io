@@ -168,7 +168,7 @@ function windowSize(){
     WidthPx = $(window).width();
     HeightPx = $(window).height();
     Width= Math.floor(WidthPx/20) -1;
-    Height =Math.floor(HeightPx/20) -4;
+    Height =Math.floor(HeightPx/20) -5;
 }
 
 function drawField(w,h){
